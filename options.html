@@ -1,0 +1,29 @@
+<!-- Storing credentials/API keys in Chrome's local storage -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Extension Options</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        input, button {
+            margin-top: 10px;
+            width: 100%;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Options for GPT Vision Call</h1>
+    <input type="text" id="apiKeyInput" placeholder="Enter OpenAI API Key">
+    <input type="text" id="appId" placeholder="Enter MongoDB Realm App ID">
+    <input type="text" id="dbName" placeholder="Enter Database Name">
+    <input type="text" id="collectionName" placeholder="Enter Collection Name">
+    <button id="saveOptions">Save Options</button>
+    <script src="options.js"></script>
+</body>
+</html>

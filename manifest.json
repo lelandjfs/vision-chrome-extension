@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Turbo API",
+    "version": "1.0",
+    "description": "Extension to call OpenAI API (GPT-4-Turbo) directly from browser",
+    "permissions": [
+        "storage", 
+        "activeTab"
+    ],
+    "host_permissions": [
+        "<all_urls>",  
+        "https://api.openai.com/*" 
+    ],
+    "action": {
+        "default_icon": "crawler.png",
+        "default_popup": "index.html"
+    },
+    "options_page": "options.html",
+    "background": {
+        "service_worker": "background.js"
+    }
+}
